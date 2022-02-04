@@ -1,4 +1,64 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --main-title-color: #ffffff;
+  --header-footer-color: #2f303a;
+}
+
 body {
   background-color: white;
-  color: #e2e2e2;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Цвет основного текста #212121 */
+/* Цвет вторичного текста #757575 */
+/* Цвет белый #FFFFFF */
+/* Цвет акцента #2196F3 */
+/* Вторичный цвет фона #F5F4FA */
+/* Цвет шапки и футера #2F303A */
+
+/* Site now */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Features */
+
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/* Team */
+
+.team-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--main-title-color);
 }

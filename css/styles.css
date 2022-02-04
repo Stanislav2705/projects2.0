@@ -4,6 +4,8 @@
   --accent-color: #2196f3;
   --main-title-color: #ffffff;
   --header-footer-color: #2f303a;
+  --secondary-bg-color: #F5F4FA;
+  --footer-text-color: color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -65,4 +67,21 @@ body {
 .button {
   background-color: var(--accent-color);
   color: var(--main-title-color);
+}
+
+
+
+/* Страница порфолио */
+
+.filter-list .buttons {
+  background-color: var(--secondary-bg-color);
+  color: var(--title-text-color);
+}
+.filter-list .buttons:hover,
+.filter-list .buttons:focus {
+  background-color: var(--accent-color);
+  color: var(--main-title-color);
+}
+.works-list .title {
+  color: var(--title-text-color);
 }

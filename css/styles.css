@@ -69,9 +69,11 @@ body {
   color: var(--main-title-color);
 }
 
+/* Footer */
 
 
-/* Страница порфолио */
+
+/* Porfolio */
 
 .filter-list .buttons {
   background-color: var(--secondary-bg-color);

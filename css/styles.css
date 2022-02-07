@@ -6,6 +6,7 @@
   --header-footer-color: #2f303a;
   --secondary-bg-color: #F5F4FA;
   --footer-text-color: color: rgba(255, 255, 255, 0.6);
+  --secondary-bg-button-color: #188ce8;
 }
 
 body {
@@ -18,11 +19,15 @@ body {
 
 .logo {
   color: var(--title-text-color);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+}
+
+.logoweb {
+  color: var(--secondary-bg-button-color);
 }
 
 .list {
@@ -35,6 +40,7 @@ body {
 /* Цвет акцента #2196F3 */
 /* Вторичный цвет фона #F5F4FA */
 /* Цвет шапки и футера #2F303A */
+/* Вторичный цвет фона кнопки #2196F3 */
 
 /* Site now */
 .site-nav .link {
@@ -43,6 +49,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -55,10 +62,17 @@ body {
 }
 
 .auth-nav .link {
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -72,7 +86,7 @@ body {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -125,14 +139,25 @@ body {
 
 /* Button */
 
-.button {
+.mainbt {
   background-color: var(--accent-color);
   color: var(--main-title-color);
+
+  cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  align-items: center;
+  text-align: center;
   text-decoration: none;
+  letter-spacing: 0.06em;
 }
+
+.mainbt:hover, .mainbt:focus {
+  background-color: var(--secondary-bg-button-color);
+} 
+
 
 /* Footer */
 .footer {
@@ -182,4 +207,13 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+}
+
+.logo-footer {
+  color: var(--main-title-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
 }

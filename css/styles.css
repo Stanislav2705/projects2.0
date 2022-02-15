@@ -74,6 +74,11 @@ address {
 /* Вторичный цвет фона кнопки #2196F3 */
 
 /* Site now */
+.header {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
 .header-container {
   display: flex;
   width: 1200px;
@@ -99,6 +104,15 @@ address {
 
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .site-nav .link {
@@ -198,10 +212,10 @@ address {
 /* Button */
 
 .mainbt {
-  background-color: var(--accent-color);
-  color: var(--main-title-color);
-
+  min-width: 200px;
+  padding: 10px 32px;
   cursor: pointer;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -210,6 +224,8 @@ address {
   text-align: center;
   text-decoration: none;
   letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--main-title-color);
 }
 
 .mainbt:hover, .mainbt:focus {

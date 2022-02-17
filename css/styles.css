@@ -153,8 +153,8 @@ address {
 }
 
 .hero-title {
+  padding-bottom: 30px;
   color: var(--main-title-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -163,9 +163,11 @@ address {
   text-transform: uppercase;
 }
 .hero-section {
-  display: flex;
+  padding: 200px 0;
+  text-align: center;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 /* Section */

@@ -77,8 +77,12 @@ address {
 
 /* Site now */
 .header {
-  margin-bottom: 24px;
-  margin-top: 24px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.border-header {
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -354,12 +358,68 @@ address {
 
 /* Porfolio */
 
+.navigation-portfolio {
+  /* border-bottom: 1px solid #ECECEC; */
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-item {
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* =======Примеры робот======== */
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+
+.work-items {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  /* box-sizing: border-box;
+  border-radius: 0px 4px ; */
+}
+
+.work-items:hover,
+.work-items:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.window-item-portfolio {
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+}
+
+.window-item-portfolio .title {
+  margin-bottom: 4px;
+}
+
 .filter-list .buttons {
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 .filter-list .buttons:hover,
 .filter-list .buttons:focus {
@@ -388,3 +448,4 @@ address {
   line-height: 1.2;
   text-decoration: none;
 }
+

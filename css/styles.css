@@ -244,9 +244,9 @@ address {
 }
 
 .feature-list .item {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; */
   width: 270px;
   /* padding-right: 30px; */
   flex-basis: calc((100% - 120px) / 4);
@@ -254,58 +254,35 @@ address {
   margin-top: 30px;
 }
 
-.antenna::before {
+.feature-list .item::before {
+  display: block;
   content: "";
-  width: 70px;
-  height: 70px;
-  padding: 25px 100px;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-image: url(../image/icon/antenna.jpg);
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: 50%;
+  background-color: var(--secondary-bg-color);
+}
+
+.antenna::before {
+  background-image: url(../image/icon/antenna1.png);
 }
 
 .clock::before {
-  content: "";
-  width: 70px;
-  height: 70px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  background-image: url(../image/icon/clock.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-image: url(../image/icon/clock1.png);
+ 
 }
 
 .diagram::before {
-  content: "";
-  width: 70px;
-  height: 70px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  background-image: url(../image/icon/diagram.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-image: url(../image/icon/diagram1.png);
 }
 
 .astronaut::before {
-  content: "";
-  width: 70px;
-  height: 70px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  background-image: url(../image/icon/astronaut.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-image: url(../image/icon/astronaut1.png);
 }
 
-/* .feature-list > .item:last-child {
-  padding-right: 0px;
-} */
 
 .feature-list .title {
   color: var(--title-text-color);

@@ -118,6 +118,37 @@ address {
   margin-right: 30px;
 }
 
+.mail {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../image/line/envelope.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.tel {
+  display: inline-flex;
+  text-align: end;
+}
+
+.tel::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../image/line/smartphone.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -153,7 +184,20 @@ address {
 /* Hero */
 
 .hero {
-  background-color: var(--header-footer-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(
+    to right, 
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ), url(../image/icon/Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -200,10 +244,63 @@ address {
 }
 
 .feature-list .item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 270px;
   /* padding-right: 30px; */
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.antenna::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-image: url(../image/icon/antenna.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.clock::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-image: url(../image/icon/clock.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.diagram::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-image: url(../image/icon/diagram.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.astronaut::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-image: url(../image/icon/astronaut.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 /* .feature-list > .item:last-child {

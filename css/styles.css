@@ -120,7 +120,8 @@ address {
 
 .mail {
   display: inline-flex;
-  align-items: center;
+  text-align: end;
+  align-items: bottom;
 }
 
 .mail::before {
@@ -128,7 +129,7 @@ address {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../image/line/envelope.jpg);
+  background-image: url(../image/line/envelope.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -137,6 +138,7 @@ address {
 .tel {
   display: inline-flex;
   text-align: end;
+  align-items: bottom;
 }
 
 .tel::before {
@@ -144,7 +146,7 @@ address {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  background-image: url(../image/line/smartphone.jpg);
+  background-image: url(../image/line/smartphone.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -267,20 +269,20 @@ address {
 }
 
 .antenna::before {
-  background-image: url(../image/icon/antenna1.png);
+  background-image: url(../image/icon/Group.svg);
 }
 
 .clock::before {
-  background-image: url(../image/icon/clock1.png);
+  background-image: url(../image/icon/clock\ 1.svg);
  
 }
 
 .diagram::before {
-  background-image: url(../image/icon/diagram1.png);
+  background-image: url(../image/icon/diagram\ 1.svg);
 }
 
 .astronaut::before {
-  background-image: url(../image/icon/astronaut1.png);
+  background-image: url(../image/icon/astronaut\ 1.svg);
 }
 
 

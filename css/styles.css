@@ -76,10 +76,10 @@ address {
 /* Вторичный цвет фона кнопки #2196F3 */
 
 /* Site now */
-.header {
+/* .header {
   padding-bottom: 24px;
   padding-top: 24px;
-}
+} */
 
 .border-header {
   border-bottom: 1px solid #ECECEC;
@@ -112,19 +112,26 @@ address {
 .auth-nav {
   display: flex;
   align-items: center;
+  /* margin-left: auto; */
 }
 
 .auth-nav-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.mail {
-  display: inline-flex;
-  text-align: end;
-  align-items: bottom;
+.nav-contacts {
+  display: flex;
+  align-items: center;
 }
 
-.mail::before {
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
+
+/* .mail::before {
   content: "";
   width: 16px;
   height: 12px;
@@ -132,16 +139,11 @@ address {
   background-image: url(../image/line/envelope.svg);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
 
-.tel {
-  display: inline-flex;
-  text-align: end;
-  align-items: bottom;
-}
 
-.tel::before {
+/* .tel::before {
   content: "";
   width: 10px;
   height: 16px;
@@ -149,9 +151,11 @@ address {
   background-image: url(../image/line/smartphone.svg);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
 .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -161,8 +165,11 @@ address {
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -170,6 +177,8 @@ address {
 }
 
 .auth-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -178,10 +187,10 @@ address {
   letter-spacing: 0.02em;
 }
 
-.auth-nav .link:hover,
+/* .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
-}
+} */
 
 /* Hero */
 
@@ -237,6 +246,16 @@ address {
   padding-bottom: 94px;
 }
 
+.feature-block {
+  display: flex;
+  align-items: center;
+  max-width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+
 .feature-list {
   display: flex;
   justify-content: space-between;
@@ -245,7 +264,7 @@ address {
   margin-top: -30px;
 }
 
-.feature-list .item {
+.feature-list-item {
   /* display: flex;
   flex-wrap: wrap;
   align-items: center; */
@@ -255,36 +274,6 @@ address {
   margin-left: 30px;
   margin-top: 30px;
 }
-
-.feature-list .item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  /* background-size: contain; */
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-color: var(--secondary-bg-color);
-}
-
-.antenna::before {
-  background-image: url(../image/icon/Group.svg);
-}
-
-.clock::before {
-  background-image: url(../image/icon/clock\ 1.svg);
- 
-}
-
-.diagram::before {
-  background-image: url(../image/icon/diagram\ 1.svg);
-}
-
-.astronaut::before {
-  background-image: url(../image/icon/astronaut\ 1.svg);
-}
-
 
 .feature-list .title {
   color: var(--title-text-color);

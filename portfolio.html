@@ -16,7 +16,7 @@
 
 <body>
     <!--Шапка сайта-->
-    <header class="border-header header">
+    <header class="header">
         <div class="header-container container">
             <nav class="navigation">
                 <a href="./index.html" lang="en" class="logo">
@@ -32,12 +32,20 @@
             <div class="">
                 <ul class="auth-nav list">
                     <li class="auth-nav-item">
-                        <a href="mailto:info@devstudio.com" class="link">
-
-
+                        <a class="nav-contacts link" href="mailto:info@devstudio.com">
+                            <svg class="icon-contact" width="16" height="12">
+                                <use href="./image/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            <span>info@devstudio.com</span>
                         </a>
                     </li>
-                    <li class="auth-nav-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                    <li class="auth-nav-item">
+                        <a class="nav-contacts link" href="tel:+380961111111">
+                            <svg class="icon-contact" width="10" height="16">
+                                <use href="./image/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            <span>+38 096 111 11 11</span>
+                        </a>
                     </li>
                 </ul>
             </div>

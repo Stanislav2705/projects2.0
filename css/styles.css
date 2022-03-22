@@ -159,6 +159,7 @@ address {
 } */
 
 .site-nav .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
@@ -167,6 +168,19 @@ address {
   line-height: 1.2;
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+.site-nav .link::after {
+  display: block;
+  content: "";
+  width: auto;
+  height: 4px;
+  border-radius: 2px;
+  
+}
+
+.site-nav .link:hover::after {
+  background-color: var(--accent-color);
 }
 
 .site-nav .link:hover,
@@ -181,7 +195,12 @@ address {
   color: var(--accent-color);
 }
 
+.site-nav-item .current::after {
+  background-color: var(--accent-color);
+}
+
 .auth-nav .link {
+  /* display: block; */
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -494,33 +513,6 @@ address {
   text-decoration: none;
 }
 
-
-
-
-/* Porfolio */
-
-.navigation-portfolio {
-  /* border-bottom: 1px solid #ECECEC; */
-}
-
-.filter-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
-
-.filter-list .item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter-item {
-  padding: 6px 22px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
 /* =======Примеры робот======== */
 
 .works-list {
@@ -543,6 +535,32 @@ address {
 .work-items:hover,
 .work-items:focus {
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+
+/* Porfolio */
+
+.navigation-portfolio {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-item {
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .window-item-portfolio {

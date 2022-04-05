@@ -58,7 +58,7 @@
         <section class="hero">
             <div class="hero-section container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="mainbt" type="button">Заказать услугу</button>
+                <button class="mainbt" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Особенности-->
@@ -347,20 +347,67 @@
     <!--Подвал сайта-->
     <footer class="footer">
         <div class="footer-container container">
-            <a href="./index.html" lang="en" class="logo-footer">
-                <span class="logoweb">Web</span>Studio
-            </a>
-
-            <ul class="contacts list">
-                <li>
-                    <a href="https://goo.gl/maps/ciaK2E81q5bPkBA17" target="_blank" rel="noopener noreferrer"
-                        class="address">г. Киев, пр-т
-                        Леси Украинки, 26</a>
-                </li>
-                <li><a href="mailto:info@example.com" class="contact">info@example.com</a></li>
-                <li><a href="tel:+380991111111" class="contact">+38 099 111 11 11</a></li>
+            <div class="contact-item">
+                <a href="./index.html" lang="en" class="logo-footer">
+                    <span class="logoweb">Web</span>Studio
+                </a>
+                <ul class="contacts list">
+                    <li>
+                        <a href="https://goo.gl/maps/ciaK2E81q5bPkBA17" target="_blank" rel="noopener noreferrer"
+                            class="address">г. Киев, пр-т
+                            Леси Украинки, 26</a>
+                    </li>
+                    <li><a href="mailto:info@example.com" class="contact">info@example.com</a></li>
+                    <li><a href="tel:+380991111111" class="contact">+38 099 111 11 11</a></li>
+                </ul>
+            </div>
+            <div class="social-block">
+                <h2 class="social-title">присоединяйтесь</h2>
+                <ul class="social-team-list list">
+                    <li class="social-team-list-item">
+                        <a href="" class="social-team-link link list-dark" aria-label="instagram">
+                            <svg class="social-list-icon icon-dark" widht="20" height="20">
+                                <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-team-list-item">
+                        <a href="" class="social-team-link link list-dark" aria-label="twitter">
+                            <svg class="social-list-icon icon-dark" widht="20" height="20">
+                                <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-team-list-item">
+                        <a href="" class="social-team-link link list-dark" aria-label="facebook">
+                            <svg class="social-list-icon icon-dark" widht="20" height="20">
+                                <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-team-list-item">
+                        <a href="" class="social-team-link link list-dark" aria-label="linkedin">
+                            <svg class="social-list-icon icon-dark" widht="20" height="20">
+                                <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./image/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

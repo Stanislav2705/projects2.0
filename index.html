@@ -404,8 +404,38 @@
                     <use href="./image/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
+            <div class="form">
+                <form class="contact-form">
+                    <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+                    <div class="form-field">
+                        <label class="contact-form-label" for="use_name">Имя</label>
+                        <input type="text" class="contact-form-input" name="use_name" required minlength="2"
+                            patterna="[-zA-Zа-яА-Я]+\s[-zA-Zа-яА-Я]+$" id="use_name">
+                    </div>
+                    <div class="form-field">
+                        <label class="contact-form-label" for="use_email">Телефон</label>
+                        <input type="email" class="contact-form-input" name="use_email" required id="use_email">
+                    </div>
+                    <div class="form-field">
+                        <label class="contact-form-label" for="use_phone">Почта</label>
+                        <input type="tel" class="contact-form-input" name="use_phone" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="097-xxx-xx-xx" id="use_phone">
+                    </div>
+                    <div class="form-field">
+                        <label class="contact-form-label" for="user_message">Коментарий</label>
+                        <textarea class="contact-form-message" name="user_message" id="user_message"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="policy" id="policy">
+                        <label class="contact-form-label" for="policy">Соглашаюсь с рассылкой и принимаю Условия
+                            договора</label>
+                    </div>
+                </form>
+            </div>
         </div>
+
     </div>
+
 
     <script src="./js/modal.js"></script>
 </body>

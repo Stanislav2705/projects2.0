@@ -856,6 +856,12 @@ address {
   
 }
 
+.contact-form-checkbox:hover + .conditions::before,
+.contact-form-checkbox:focus + .conditions::before {
+  outline: 1px solid #2196f3;
+  border-radius: 20%;
+}
+
 .contact-form-checkbox:checked + .conditions::before {
   background-image: url(../image/check.svg);
   background-color: var(--accent-color);

@@ -1,0 +1,41 @@
+.classes-section {
+  padding-bottom: 94px;
+}
+
+.classes-section .title {
+  margin-bottom: 50px;
+}
+
+.classes-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.classes-item {
+  position: relative;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.classes-text{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.classes-text .description {
+  padding: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--main-title-color);
+}

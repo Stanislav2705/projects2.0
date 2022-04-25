@@ -1,0 +1,66 @@
+.navigation-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+
+  & .item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filter-item {
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.window-item-portfolio {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.window-item-portfolio .title {
+  margin-bottom: 4px;
+}
+
+.filter-list .buttons {
+  background-color: var(--secondary-bg-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    backgound-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-title-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.works-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-list .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
+}

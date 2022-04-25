@@ -1,0 +1,38 @@
+// ========Plaseholder===========
+
+%list-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// -----CSS---------
+.social-list {
+  @extend %list_align;
+  color: aqua;
+}
+
+.naw-list {
+  @extend %list-align;
+  color: antiquewhite;
+}
+
+// ==========Mixin==========
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh / $fs;
+}
+
+// -------CSS----------
+.title {
+  @include font(24px, 700, 28px);
+}
+
+.subtitle {
+  @include font(18px, 600, 22px);
+}
+
+.description {
+  @include font(14px, 400, 18px);
+}

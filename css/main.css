@@ -385,6 +385,18 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-color: transparent;
+  }
+}
+
 .hero {
   max-width: 1600px;
   height: 600px;

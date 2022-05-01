@@ -68,6 +68,17 @@
 
 // 768px+
 @media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .header {
+    background-color: transparent;
+  }
 }
 
 // 1200px+

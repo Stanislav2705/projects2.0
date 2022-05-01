@@ -3,9 +3,7 @@
 }
 
 .filter-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %list-align;
   margin-top: 94px;
   margin-bottom: 50px;
 

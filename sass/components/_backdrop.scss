@@ -23,6 +23,10 @@
   width: 528px;
   height: 580px;
   background-color: rgba(255, 255, 255, 1);
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .modal-close-btn {

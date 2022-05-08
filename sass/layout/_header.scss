@@ -110,7 +110,7 @@
     display: block;
   }
 
-  .auth-nav-item {
+  .auth-nav-item:not(:last-child) {
     align-items: center;
     margin-bottom: 10px;
   }

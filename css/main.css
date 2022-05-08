@@ -70,7 +70,7 @@ address {
   text-decoration: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -594,7 +594,7 @@ address {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/icon/header-mobile.img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/image/icon/header-mobile.img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -602,7 +602,7 @@ address {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/icon/header-mobile.img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/image/icon/header-mobile.img@2x.jpg);
   }
 }
 
@@ -722,6 +722,12 @@ address {
 
 .classes-section {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .classes-section {
+    display: none;
+  }
 }
 
 .classes-section .title {

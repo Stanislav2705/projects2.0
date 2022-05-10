@@ -5,11 +5,9 @@
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-}
-
-.team-img {
-  max-width: 100%;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
 
 .team-item {

@@ -3,6 +3,12 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .social-team-list {
+    justify-content: center;
+  }
+}
+
 .social-team-link {
   @extend %list-align;
   width: 44px;

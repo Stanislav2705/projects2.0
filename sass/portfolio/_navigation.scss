@@ -4,11 +4,23 @@
 
 .filter-list {
   @extend %list-align;
-  margin-top: 94px;
   margin-bottom: 50px;
 
   & .item:not(:last-child) {
     margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 25px;
+
+    & .item {
+      margin-bottom: 15px;
+    }
   }
 }
 

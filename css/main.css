@@ -376,6 +376,7 @@ address {
   }
   .mobile-menu {
     position: absolute;
+    z-index: 999;
     top: 0;
     right: 0;
     width: 100%;
@@ -459,8 +460,18 @@ address {
   .social-mobile__list {
     display: flex;
   }
+}
+
+@media screen and (max-width: 767px) and (max-width: 479px) {
+  .social-mobile__list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .social-mobile__list-item:not(:last-child) {
     margin-right: 20px;
+    margin-bottom: 15px;
   }
   .social-mobile__list-link {
     font-weight: 500;
@@ -468,6 +479,14 @@ address {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-contact .mob-contacts {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
@@ -643,20 +662,20 @@ address {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/icon/header-tablet.img.jpg);
   }
 }
 
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/icon/header-tablet.img@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     height: 600px;
@@ -664,13 +683,13 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/icon/header-desktop.img@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero-section {
     padding: 200px 0;
   }

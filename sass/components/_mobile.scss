@@ -8,6 +8,7 @@
 
   .mobile-menu {
     position: absolute;
+    z-index: 999;
     top: 0;
     right: 0;
     width: 100%;
@@ -104,13 +105,26 @@
     display: flex;
   }
 
+  @media screen and (max-width: 479px) {
+    .social-mobile__list {
+      flex-wrap: wrap;
+    }
+  }
+
   .social-mobile__list-item:not(:last-child) {
     margin-right: 20px;
+    margin-bottom: 15px;
   }
 
   .social-mobile__list-link {
     @include font(500, 18px, 22px);
     letter-spacing: 0.02em;
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-contact .mob-contacts {
+    @include font(500, 24px, 28px);
   }
 }
